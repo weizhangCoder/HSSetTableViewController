@@ -56,7 +56,7 @@
     cell2.leftPading = 100;
     cell2.detailFont = [UIFont boldSystemFontOfSize:20];
     cell2.detailColor = [UIColor blueColor];
-    
+    cell2.isAutoLayoutdetailText = YES;
     
    
     

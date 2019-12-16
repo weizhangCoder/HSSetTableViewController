@@ -133,7 +133,11 @@
 
     [self setDetailText:self.detailText];
 }
-
+- (void)setIsAutoLayoutdetailText:(BOOL)isAutoLayoutdetailText{
+    _isAutoLayoutdetailText = isAutoLayoutdetailText;
+    
+     [self setDetailText:self.detailText];
+}
 - (void)setDetailText:(NSString *)detailText
 {
     //如果detailText为nil 直接返回，为空不能返回
@@ -145,7 +149,9 @@
         //如果外部设置过富文本，则忽略纯文本计算
         return;
     }
-    [self heightSizeWithTextObject:detailText];
+    if (self.isAutoLayoutdetailText) {
+        [self heightSizeWithTextObject:detailText];
+    }
    
 }
 

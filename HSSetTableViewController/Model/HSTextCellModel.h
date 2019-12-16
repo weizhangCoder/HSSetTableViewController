@@ -12,6 +12,7 @@
 
 
 @property (nonatomic, copy)   NSString *detailText;  ///<详细文本
+@property (nonatomic, assign)   BOOL isAutoLayoutdetailText;  ///<默认是NO  设置YES 自适应  cellHeight将失效
 @property (nonatomic, copy)   NSAttributedString *attributeDetailText;  ///<设置富文本内容后detailText将失效
 
 @property (nonatomic, strong) UIColor *detailColor;  ///<cell详细文本color

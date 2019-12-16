@@ -164,7 +164,7 @@
 
 - (void)updateCellModel:(HSBaseCellModel *)cellModel
 {
-    [self updateCellModel:cellModel animation:UITableViewRowAnimationFade];
+    [self updateCellModel:cellModel animation:UITableViewRowAnimationNone];
 }
 - (void)updateCellModel:(HSBaseCellModel *)cellModel animation:(UITableViewRowAnimation)animation
 {
